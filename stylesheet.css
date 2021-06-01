@@ -1,0 +1,167 @@
+Body { 
+    margin:0;
+    background: rgb(68, 68, 68);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+} 
+
+header {
+    background: maroon;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav { float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    
+    position: relative;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav ul .search-icon { 
+    float: right;
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+
+}
+
+nav ul .search-icon input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+
+}
+
+nav ul .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc; 
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+nav ul .search-icon .icon:hover{
+    background: #e6e6e6;
+}
+
+nav ul .search-icon .icon span{
+    color: #22222;
+    font-size: 18px;
+
+}
+
+.button { 
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 100%;
+    background: linear-gradient(90deg, black, grey);
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    
+}
+
+.main { 
+    text-align: center;
+    color: white;
+
+}
+
+.main p{
+    color: gold;
+}
+
+.bg-light {
+    background-color: #f8f9fa!important;
+}
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+.mt-auto {
+    margin-top: auto!important;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+footer {
+    display: block;
+}
+
+footer { 
+    text-align: center;
+}
+
+.LAland {
+    color: white;
+}
